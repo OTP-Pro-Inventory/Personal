@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gotcha Azrael's Rust Server</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2d2d2d;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #ff6b00;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    section {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #333;
+    }
+
+    section h2 {
+      color: #00bfff;
+      margin-top: 0;
+    }
+
+    .server-info {
+      background-color: #2a2a2a;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .server-info p {
+      margin: 0.5rem 0;
+    }
+
+    .rules-list, .commands-list, .mods-list {
+      background-color: #252525;
+      padding: 1rem;
+      border-radius: 5px;
+      margin: 1rem 0;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background-color: #00bfff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #0088cc;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 2rem;
+    }
+
+    code {
+      background-color: #333;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gotcha Azrael's Rust Server</h1>
+  </header>
+
+  <div class="container">
+    <div class="server-info">
+      <p><strong>Server IP:</strong> <code>play.gotcha-azrael.com</code></p>
+      <p><strong>Wipe Schedule:</strong> Monthly (First Thursday of each month)</p>
+      <p><strong>Max Players:</strong> 100</p>
+      <p><strong>Server Location:</strong> [Your server location]</p>
+    </div>
+
+    <section id="rules">
+      <h2>📜 Server Rules</h2>
+      <div class="rules-list">
+        <h3>General Rules:</h3>
+        <ul>
+          <li>No racism, sexism, or hate speech of any kind</li>
+          <li>No cheating or exploiting game bugs</li>
+          <li>No spamming in chat or voice</li>
+          <li>No impersonating staff members</li>
+          <li>Respect all players - toxic behavior will not be tolerated</li>
+        </ul>
+        
+        <h3>Gameplay Rules:</h3>
+        <ul>
+          <li>No building in monument zones</li>
+          <li>No camping safe zones (30 second rule)</li>
+          <li>No excessive roof camping</li>
+          <li>No teaming in solo zones</li>
+          <li>No griefing beyond normal raiding (e.g., no completely blocking entrances)</li>
+        </ul>
+        
+        <p><strong>Violations:</strong> Breaking rules may result in warnings, temporary bans, or permanent bans depending on severity.</p>
+      </div>
+    </section>
+
+    <section id="commands">
+      <h2>⌨️ Available Commands</h2>
+      <div class="commands-list">
+        <ul>
+          <li><code>/help</code> - Shows available commands</li>
+          <li><code>/shop</code> - Opens the server shop</li>
+          <li><code>/kit starter</code> - Get a starter kit (once per wipe)</li>
+          <li><code>/tpr</code> - Request to teleport to a random location</li>
+          <li><code>/home</code> - Teleport to your set home (cooldown: 30 min)</li>
+          <li><code>/sethome</code> - Set your home location</li>
+          <li><code>/removehome</code> - Remove your home location</li>
+          <li><code>/report [player] [reason]</code> - Report a player to admins</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="mods">
+      <h2>⚙️ Server Mods & Plugins</h2>
+      <div class="mods-list">
+        <h3>Quality of Life Mods:</h3>
+        <ul>
+          <li>BetterChat</li>
+          <li>QuickSmelt</li>
+          <li>StackSizeController</li>
+          <li>AutoDoors</li>
+          <li>DeathNotes</li>
+        </ul>
+        
+        <h3>Gameplay Mods:</h3>
+        <ul>
+          <li>Teleportation system (/tpr, /home)</li>
+          <li>Kits system</li>
+          <li>Economy system with server shop</li>
+          <li>Clan system</li>
+          <li>Raidable bases (NPC)</li>
+        </ul>
+      </div>
+    </section>
+
+    <a href="index.html" class="back-btn">← Back to Server Hub</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Gotcha Azrael's Server Hub | All rights reserved
+  </footer>
+
+</body>
+</html>
